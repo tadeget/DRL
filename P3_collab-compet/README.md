@@ -31,5 +31,21 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 3. Place the unzipped folder from step 2 in p3_collab-compet folder (the DRLND GitHub repository).
 
+4. Create the environment
+The requirements.txt contains all the packages required to set up a Conda environment. 
+
+Run the following commands to create the environment, this will create an environment named drlnd.
+
+```
+$ conda create --name drlnd --file requirements.txt
+$ conda activate drlnd  
+```
+Activate the `drlnd` environment and start the Jupyter Notebook server by running the commands below.
+
+```
+$ conda activate drlnd
+$ jupyter notebook
+```
+
 ### How to run the code
 You can train and test the agent using the Tennis.ipynb notebook. Follow the instructions provided in the notebook to adjust the hyperparameters as needed
